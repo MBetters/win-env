@@ -4,11 +4,8 @@
 - In a CMD shell ran as Administrator, run...
 
 ```batch
-REM Web browser
+REM Web browsers
 choco install googlechrome firefox -y
-
-REM Hardware monitoring
-choco install openhardwaremonitor hwinfo speccy -y
 
 REM Chat
 choco install slack discord skype -y
@@ -31,12 +28,26 @@ choco install 7zip.install -y
 REM Note-taking
 choco install evernote
 
-REM Essential dev utils
-choco install git cmder putty meld dbeaver sql-server-management-studio postman winscp mobaxterm ultravnc gitkraken gitahead jenkins notepadplusplus fiddler -y
-choco install windirstat winpcap wireshark pgadmin4 nmap nodejs gradle golang chocolateygui autohotkey consolez docker gradle baretail javaruntime procexp -y
-choco install jre8 -y
-choco install openssh --pre -y
+REM Version control
+choco install git gitkraken gitahead meld -y
+
+REM Terminals
+choco install cmder mobaxterm consolez putty winscp ultravnc -y
+
+REM IDEs
+choco install dbeaver sql-server-management-studio pgadmin4 jenkins -y
+choco install notepadplusplus fiddler postman chocolateygui -y
 choco install vscode --params "/NoDesktopIcon" -y
+
+REM Monitoring
+choco install windirstat winpcap wireshark nmap procexp baretail -y
+choco install openhardwaremonitor hwinfo speccy -y
+
+REM Runtimes
+choco install nodejs gradle golang docker gradle javaruntime jre8 autohotkey -y
+
+REM SSH
+choco install openssh --pre -y
 
 REM C++ and .NET dev
 choco install cmake ninja make -y
