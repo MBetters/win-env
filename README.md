@@ -44,7 +44,7 @@ choco install windirstat winpcap wireshark nmap procexp baretail -y
 choco install openhardwaremonitor hwinfo speccy -y
 
 REM Runtimes
-choco install nodejs gradle golang docker gradle javaruntime jre8 autohotkey -y
+choco install nodejs golang docker gradle javaruntime jre8 autohotkey -y
 
 REM SSH
 choco install openssh --pre -y
